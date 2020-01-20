@@ -1,17 +1,20 @@
-import React from 'react';
-import { View, Text, StyleSheet, Button } from 'react-native';
+import React from "react";
+import { View, Text, StyleSheet } from "react-native";
 
-const HomeScreen = ({ navigation }) => {
+const HomeScreen = () => {
   return (
     <View>
-      <Text style={{ fontSize: 30 }}>HomeScreen</Text>
-      <Button title="Layout" onPress={() => navigation.navigate('Layout')} />
+      <Text style={styles.text}>Ava I Love You!!!!</Text>
+      <Text style={styles.text}>Ava I Love You!!!!</Text>
     </View>
   );
 };
 
-HomeScreen.navigationOptions = {
-  title: 'Home'
-};
+const styles = StyleSheet.create({
+  text: {
+    fontSize: 30,
+    color: "red"
+  }
+});
 
 export default HomeScreen;
